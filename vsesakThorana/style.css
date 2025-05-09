@@ -1,0 +1,491 @@
+body {
+    background: url("sources/background1.avif");
+    background-size: cover;
+}
+
+#cursor {
+    position: fixed;
+    z-index: 999;
+    background: #2696e8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696e8,
+        0 0 60px #2696e8,
+        0 0 100px #2696e8;
+    animation: colors 5s infinite;
+    margin: 5px;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+#thorana {
+    overflow: hidden;
+}
+
+
+@keyframes huvRotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* chapters public adjustments */
+.rounds {
+    width: 230px;
+    animation: huvRotate 10s infinite;
+}
+
+.storyImgs {
+    width: 180px;
+    border-radius: 50%;
+    position: relative;
+    top: -25px;
+    left: -210px;
+}
+
+/* /chapters public adjustments/ */
+
+
+/* all chapters */
+/* big chapter */
+#chapter1 {
+    position: relative;
+    top: -1550px;
+    left: -235px;
+    z-index: -1;
+}
+
+#round1 {
+    width: 235px;
+}
+
+#storyImg1 {
+    width: 185px;
+    border-radius: 50%;
+    position: relative;
+    top: -25px;
+    left: -212px;
+}
+
+/* /big chapter/ */
+
+#chapter2 {
+    position: relative;
+    top: -1310px;
+    left: -70px;
+}
+
+#chapter3 {
+    position: relative;
+    top: -1250px;
+    left: -120px;
+}
+
+#chapter4 {
+    position: relative;
+    top: -1120px;
+    left: -20px;
+}
+
+#chapter5 {
+    position: relative;
+    top: -960px;
+    left: 100px;
+}
+
+#chapter6 {
+    position: relative;
+    top: -640px;
+    left: 220px;
+    z-index: 3;
+}
+
+#chapter7 {
+    position: relative;
+    top: -280px;
+    left: 300px;
+    z-index: 4;
+}
+
+#chapter8 {
+    position: relative;
+    top: 110px;
+    left: 280px;
+    z-index: 5;
+}
+
+/* big chapter */
+#chapter9 {
+    position: relative;
+    top: 370px;
+    left: 440px;
+}
+
+#round9 {
+    width: 240px;
+}
+
+#storyImg9 {
+    width: 190px;
+    border-radius: 50%;
+    position: relative;
+    top: -25px;
+    left: -218px;
+}
+
+/* /big chapter/ */
+/* /all chapters/ */
+
+
+/* board */
+#boardDiv {
+    position: relative;
+    top: -2375px;
+    z-index: 100;
+    border: 10px solid rgba(255, 255, 255, 0.583);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#boardDiv:before,
+#boardDiv:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #1500fb, #e1ff00, #ff0000, #ffffff, #ff9500, #1500fb, #e1ff00, #ff0000, #ffffff, #ff9500);
+    background-size: 400%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -100;
+    animation: steam 30s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#boardDiv:after {
+    filter: blur(30px);
+}
+
+#boardImg {
+    width: 1280px;
+}
+
+/* /board/ */
+
+
+/* lordBudda */
+#loardBuddaDiv {
+    position: relative;
+    top: -1970px;
+    z-index: 10;
+}
+
+#bigRoundDiv {
+    position: relative;
+}
+
+#mainBigRound {
+    width: 290px;
+    position: relative;
+    z-index: 1;
+    left: 160px;
+    top: -10px;
+}
+
+#bigRound {
+    width: 300px;
+    position: relative;
+    left: -140px;
+}
+
+#buddhaImg {
+    width: 350px;
+    position: relative;
+    top: -290px;
+    left: 5px;
+    z-index: 2;
+    filter: drop-shadow(0 0 10px #ffffff) saturate(1.2);
+}
+
+/* lordBudda */
+
+/* backLights */
+#backLightN {
+    position: relative;
+    top: -3119px;
+    z-index: -5;
+}
+
+#backLightL {
+    width: 585px;
+    transform: scaleX(-1);
+     filter: drop-shadow(0 0 10px #ffffff);
+}
+
+#backLightR {
+    width: 585px;
+    filter: drop-shadow(0 0 10px #ffffff);
+}
+
+/* /backLights/ */
+
+/* elephant pic */
+#elephantN {
+    position: relative;
+    top: -3619px;
+    z-index: -5;
+}
+
+#elephantL {
+    width: 585px;
+    position: relative;
+    transform: scaleX(-1);
+    animation: elephantGlow 1s ease-in-out infinite alternate;
+}
+
+#elephantR {
+    width: 585px;
+    animation: elephantGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes elephantGlow {
+    0% {
+        filter: drop-shadow(0px 0px 5px #00a2ff);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 20px #ffffff);
+    }
+}
+
+/* /elephant pic/ */
+
+
+/* extras */
+#moon {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    animation: change 40s;
+    z-index: -10000;
+}
+
+@keyframes change {
+    0% {
+        top: 70px;
+        left: 700px;
+    }
+
+}
+
+#moon:before {
+    content: '';
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: #ddd;
+    margin: auto;
+    box-shadow: 0 0 100px gold,
+        0 0 150px gold,
+        0 0 200px gold,
+        0 0 250px gold,
+        0 0 300px gold,
+        0 0 350px gold,
+        inset 0 20px 20px 40px whitesmoke,
+        inset 30px 0 35px 50px ivory;
+    transition: 1s;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    animation: glowing infinite 13s;
+}
+
+#boBranchDiv {
+    position: relative;
+    float: right;
+    top: -5350px;
+}
+
+#booTree {
+    width: 450px;
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin: -7px;
+    animation: swing1 2s ease-in-out 1s infinite alternate;
+    filter: drop-shadow(0 0 10px #1eff00);
+    top: -70px;
+}
+
+#redLantern {
+    width: 130px;
+    position: relative;
+    z-index: 0;
+    margin: none;
+    float: right;
+    left: 410px;
+    top: 215px;
+    transform: rotate(0deg);
+    animation: swing2 2s ease-in-out 1s infinite alternate;
+    filter: drop-shadow(0 0 20px #ff0000);
+}
+
+#yellowLantern {
+    width: 130px;
+    position: relative;
+    top: 120px;
+    z-index: 0;
+    margin: none;
+    float: right;
+    left: 490px;
+    transform: rotate(0deg);
+    animation: swing2 2s ease-in-out 1s infinite alternate;
+    filter: drop-shadow(0 0 20px #ff0000);
+}
+
+#swingLight {
+    position: relative;
+    transform: scaleX(-1);
+    top: -5050px;
+    float: left;
+    left: -60px;
+    z-index: 16;
+    filter: drop-shadow(0 0 20px #d2c109);
+}
+
+#lightSrip {
+    position: relative;
+    transform: scaleX(-1);
+    top: -5070px;
+    float: left;
+    left: -60px;
+    z-index: -2;
+    filter: drop-shadow(0 0 20px #004904);
+}
+
+#lightN {
+    position: relative;
+    top: -4690px;
+    transform: rotate(60deg);
+    float: left;
+    left: -620px;
+    z-index: -1;
+    filter: drop-shadow(0 0 20px #004904);
+    width: 500px;
+}
+
+/* /extras/ */
+#flagDiv {
+    position: relative;
+    z-index: -100;
+    top: -4150px;
+}
+
+#flagL {
+    position: relative;
+    left: -350px;
+}
+
+#flagR {
+    position: relative;
+    left: 350px
+}
+
+/* backlights */
+#backBoardsDiv {
+    position: relative;
+    top: -4200px; 
+    z-index: -1000;
+}
+
+#backBoardL {
+    position: relative;
+    transform: rotate(90deg);
+    left: -200px;
+    animation: huvRotate 5s infinite;
+    border-bottom-left-radius: 100px;
+}
+
+#backBoardR {
+    position: relative;
+    transform: rotate(90deg);
+     left: 200px;
+      animation: huvRotate 5s infinite;
+      border-top-left-radius: 100px;
+     
+}
+#backBoardC {
+    position: relative;
+    width: 750px;
+    top: -430px;
+    animation: huvRotate 5s infinite;
+}
+
+
+
+
+@media (max-width:1270px) {
+    body {
+        width: 1194px;
+    }
+
+    #boardImg {
+        width: 1170px;
+    }
+}
+
+#audioDiv{
+    position: relative;
+    top: -4000px;
+}
+
+hr{
+    width: 100%;
+}
+
+#aTag{
+    margin: 10px;
+    color: aliceblue;
+}
+
+audio{
+    width: 100%;
+}
