@@ -53,3 +53,42 @@ setInterval(function lightRound1() {
     document.getElementById("bigRound").src = "sources/lightRound/7.gif";
 }, 28350);
 
+const desktopWidth = 1500; 
+
+function scaleToFit() {
+    const windowWidth = window.innerWidth;
+    const scale = windowWidth < desktopWidth ? windowWidth / desktopWidth : 1;
+    
+    // Apply scale to a wrapper or the body
+    document.body.style.transform = `scale(${scale})`;
+    document.body.style.transformOrigin = 'top left';
+    
+    // Prevent white space by adjusting the container width
+    document.body.style.width = (100 / scale) + '%';
+}
+
+window.addEventListener('resize', scaleToFit);
+window.addEventListener('load', scaleToFit);
+
+function forceScale() {
+    const inner = document.getElementById('scaler-inner');
+    const outer = document.getElementById('scaler-outer');
+    
+    const targetWidth = 1500;
+    const windowWidth = window.innerWidth;
+    
+    // Calculate how much to zoom (e.g., 0.5 for a 750px screen)
+    const scale = windowWidth / targetWidth;
+    
+    // Apply the scale
+    inner.style.transform = `scale(${scale})`;
+    
+    // IMPORTANT: Shrink the height of the outer container 
+    // to match the visually scaled height of the inner content
+    outer.style.height = (inner.offsetHeight * scale) + "px";
+}
+
+window.addEventListener('resize', forceScale);
+window.addEventListener('load', forceScale);
+// If your content loads dynamically, call forceScale() again
+
