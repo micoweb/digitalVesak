@@ -4,6 +4,8 @@
 body {
     background: url("sources/background1.avif");
     background-size: cover;
+    overflow-x: hidden;
+    
 }
 
 #cursor {
@@ -34,6 +36,9 @@ body {
 
 #thorana {
     overflow: hidden;
+    max-width: 2500px;
+    
+   
 }
 
 
@@ -161,7 +166,7 @@ body {
     top: -2375px;
     z-index: 100;
     border: 10px solid rgba(255, 255, 255, 0.583);
-    width: fit-content;
+    width: 86%;
     height: fit-content;
     border-radius: 10px;
     padding: 5px;
@@ -200,7 +205,7 @@ body {
 }
 
 #boardImg {
-    width: 1280px;
+    width: 100%;
 }
 
 /* /board/ */
@@ -283,7 +288,7 @@ body {
 
 @keyframes elephantGlow {
     0% {
-        filter: drop-shadow(0px 0px 5px #00a2ff);
+        filter: drop-shadow(0px 0px 5px #efd300);
     }
 
     100% {
@@ -508,4 +513,36 @@ hr{
 
 audio{
     width: 100%;
+}
+
+
+@keyframes swing1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-1deg);
+    }
+
+}
+
+@keyframes swing2 {
+    0% {
+        transform: rotate(6deg);
+    }
+
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+
+@keyframes swing3 {
+    0% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(4deg);
+    }
 }
