@@ -1,8 +1,7 @@
 # digitalVesak
-Hoarna Dp it campus 
-
 The audio's time can be controled by audio control pannel
 
-Also you can give me a comment 😊
+you can also give me a comment using a emails 😊
+microworld.micomail@gmail.com
 
-©2025 Sadew Nethsara
+©2026 MicoWEB by Sadew Nethsara
