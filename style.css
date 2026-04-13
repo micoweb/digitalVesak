@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Outfit', sans-serif;
     transition: 1s;
 }
 
@@ -9,11 +11,13 @@ body {
     background: url("background.jpg");
     background-size: cover;
     background-position: center center;
+    overflow: hidden;
 }
 
 #main{
     color: white;
-    font-size: 35px;
+     font-weight: 900;
+    font-family: 'Gemunu Libre', sans-serif;
 }
 
 #downloadsDiv{
@@ -29,15 +33,16 @@ body {
     transform: translate(-50%, -50%);
     width: 350px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.205);
     border-radius: 36px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.8px);
     -webkit-backdrop-filter: blur(7.8px);
+    border: #bdbdbdb9 1px solid;
 }
 
 #vTbutton{
-    background: #0077ff;
+    background: #ff5100;
     text-decoration:none;
     color: white;
     padding: 10px 45px;
@@ -45,11 +50,12 @@ body {
     font-size: 20px;
     border-radius: 60px;
     border: none;
+width: 310px;
     cursor: pointer;   
 }
 
 #vCbutton{
-    background: #ff0080;
+    background: #b37700;
     text-decoration:none;
     color: white;
     padding: 10px;
@@ -58,16 +64,16 @@ body {
     border-radius: 60px;
     border: none;
     cursor: pointer;
-    width: 300px;
+    width: 280px;
 }
 
 #vTbutton:hover{
-    box-shadow: 0 0 60px #0077ff,
-    0 0 120px #0077ff;
+    box-shadow: 0 0 60px #ff8400,
+    0 0 120px #ff7b00;
 }
 #vCbutton:hover{
-    box-shadow: 0 0 60px #ff0080,
-    0 0 120px #ff0080;
+    box-shadow: 0 0 60px #ff4d00,
+    0 0 120px #ff0400;
 }
 .href{
     display: flex;
@@ -78,7 +84,7 @@ body {
     padding: 10px 45px;
     font-weight: bold;
     font-size: 20px;
-    border-radius: 60px;
+    border-radius: 45px;
     border: none;
     cursor: pointer;
     margin: 5px;   
@@ -86,11 +92,11 @@ body {
 
 #main {
   color: #fff;
-  font-size: 35px;
+  font-size: 45px;
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
-  margin: 0 auto;
+  margin: 10px auto -30px auto;
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
@@ -109,6 +115,7 @@ body {
 }
 
 #txt{
-     color: #fff;
-  font-size: 45px;
+     color: #f7b715;
+  font-size: 75px;
+  font-weight: 900;
 }
